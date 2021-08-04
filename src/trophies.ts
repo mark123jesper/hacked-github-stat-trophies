@@ -117,6 +117,7 @@ export class MultipleLangTrophy extends Trophy{
     super(score, rankConditions);
     this.title = "Multi Language";
     this.filterTitles = ["MultipleLang", "MultiLanguage"];
+    this.bottomMessage = "∞pt";
     this.hidden = true;
   }
 }
@@ -133,7 +134,7 @@ export class AllSuperRankTrophy extends Trophy{
     super(score, rankConditions);
     this.title = "All Super Rank";
     this.filterTitles = ["AllSuperRank"];
-    this.bottomMessage = "∞pt"
+    this.bottomMessage = "∞pt";
     this.hidden = true;
   }
 }
@@ -159,7 +160,7 @@ export class AncientAccountTrophy extends Trophy{
       new RankCondition(
         RANK.SECRET,
         "Ancient User",
-        1,
+        0,
       ),
     ];
     super(score, rankConditions);
@@ -175,7 +176,7 @@ export class LongTimeAccountTrophy extends Trophy{
       new RankCondition(
         RANK.SECRET,
         "Village Elder",
-        10,
+        0,
       ),
     ];
     super(score, rankConditions);
@@ -241,26 +242,6 @@ export class TotalCommitTrophy extends Trophy {
       new RankCondition(
         RANK.SSS,
         "God Committer",
-        4000,
-      ),
-      new RankCondition(
-        RANK.SS,
-        "Deep Committer",
-        2000,
-      ),
-      new RankCondition(
-        RANK.S,
-        "Super Committer",
-        1000,
-      ),
-      new RankCondition(
-        RANK.AAA,
-        "Ultra Committer",
-        500,
-      ),
-      new RankCondition(
-        RANK.AA,
-        "Hyper Committer",
         1,
       ),
     ];
@@ -276,16 +257,6 @@ export class TotalFollowerTrophy extends Trophy {
       new RankCondition(
         RANK.SSS,
         "Super Celebrity",
-        1000,
-      ),
-      new RankCondition(
-        RANK.SS,
-        "Ultra Celebrity",
-        400,
-      ),
-      new RankCondition(
-        RANK.S,
-        "Hyper Celebrity",
         1,
       ),
     ];
