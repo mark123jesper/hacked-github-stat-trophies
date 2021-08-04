@@ -115,7 +115,7 @@ export class MultipleLangTrophy extends Trophy{
       ),
     ];
     super(score, rankConditions);
-    this.title = "MultiLanguage";
+    this.title = "Multi Language";
     this.filterTitles = ["MultipleLang", "MultiLanguage"];
     this.hidden = true;
   }
@@ -131,7 +131,7 @@ export class AllSuperRankTrophy extends Trophy{
       ),
     ];
     super(score, rankConditions);
-    this.title = "AllSuperRank";
+    this.title = "All Super Rank";
     this.filterTitles = ["AllSuperRank"];
     this.bottomMessage = "∞pt"
     this.hidden = true;
@@ -147,7 +147,7 @@ export class Joined2020Trophy extends Trophy{
       ),
     ];
     super(score, rankConditions);
-    this.title = "Joined2021";
+    this.title = "Joined 2021";
     this.filterTitles = ["Joined2020"];
     this.bottomMessage = "Joined 2021"
     this.hidden = true;
@@ -163,7 +163,7 @@ export class AncientAccountTrophy extends Trophy{
       ),
     ];
     super(score, rankConditions);
-    this.title = "AncientUser";
+    this.title = "Ancient User";
     this.filterTitles = ["AncientUser"];
     this.bottomMessage = "Before 2010"
     this.hidden = true;
@@ -179,7 +179,7 @@ export class LongTimeAccountTrophy extends Trophy{
       ),
     ];
     super(score, rankConditions);
-    this.title = "LongTimeUser";
+    this.title = "Long Time User";
     this.filterTitles = ["LongTimeUser"];
     this.hidden = true;
   }
@@ -261,21 +261,6 @@ export class TotalCommitTrophy extends Trophy {
       new RankCondition(
         RANK.AA,
         "Hyper Committer",
-        200,
-      ),
-      new RankCondition(
-        RANK.A,
-        "High Committer",
-        100,
-      ),
-      new RankCondition(
-        RANK.B,
-        "Middle Committer",
-        10,
-      ),
-      new RankCondition(
-        RANK.C,
-        "First Commit",
         1,
       ),
     ];
@@ -441,41 +426,6 @@ export class TotalRepositoryTrophy extends Trophy {
       new RankCondition(
         RANK.SSS,
         "God Repo Creator",
-        100,
-      ),
-      new RankCondition(
-        RANK.SS,
-        "Deep Repo Creator",
-        90,
-      ),
-      new RankCondition(
-        RANK.S,
-        "Super Repo Creator",
-        80,
-      ),
-      new RankCondition(
-        RANK.AAA,
-        "Ultra Repo Creator",
-        50,
-      ),
-      new RankCondition(
-        RANK.AA,
-        "Hyper Repo Creator",
-        30,
-      ),
-      new RankCondition(
-        RANK.A,
-        "High Repo Creator",
-        20,
-      ),
-      new RankCondition(
-        RANK.B,
-        "Middle Repo Creator",
-        10,
-      ),
-      new RankCondition(
-        RANK.C,
-        "First Repository",
         1,
       ),
     ];
