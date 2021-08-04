@@ -148,9 +148,9 @@ export class Joined2020Trophy extends Trophy{
     ];
     super(score, rankConditions);
     this.title = "Joined2021";
-    this.filterTitles = ["Joined2021"];
+    this.filterTitles = ["Joined2020"];
     this.bottomMessage = "Joined 2021"
-    this.hidden = false;
+    this.hidden = true;
   }
 }
 export class AncientAccountTrophy extends Trophy{
@@ -166,7 +166,7 @@ export class AncientAccountTrophy extends Trophy{
     this.title = "AncientUser";
     this.filterTitles = ["AncientUser"];
     this.bottomMessage = "Before 2010"
-    this.hidden = false;
+    this.hidden = true;
   }
 }
 export class LongTimeAccountTrophy extends Trophy{
@@ -181,7 +181,7 @@ export class LongTimeAccountTrophy extends Trophy{
     super(score, rankConditions);
     this.title = "LongTimeUser";
     this.filterTitles = ["LongTimeUser"];
-    this.hidden = false;
+    this.hidden = true;
   }
 }
 
