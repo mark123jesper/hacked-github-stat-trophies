@@ -286,31 +286,6 @@ export class TotalFollowerTrophy extends Trophy {
       new RankCondition(
         RANK.S,
         "Hyper Celebrity",
-        200,
-      ),
-      new RankCondition(
-        RANK.AAA,
-        "Famous User",
-        100,
-      ),
-      new RankCondition(
-        RANK.AA,
-        "Active User",
-        50,
-      ),
-      new RankCondition(
-        RANK.A,
-        "Dynamic User",
-        20,
-      ),
-      new RankCondition(
-        RANK.B,
-        "Many Friends",
-        10,
-      ),
-      new RankCondition(
-        RANK.C,
-        "First Friend",
         1,
       ),
     ];
