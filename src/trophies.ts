@@ -188,7 +188,7 @@ export class LongTimeAccountTrophy extends Trophy{
 }
 
 export class TotalStarTrophy extends Trophy {
-  constructor(score: "∞pt") {
+  constructor(score: number) {
     const rankConditions = [
       new RankCondition(
         RANK.SSS,
@@ -199,11 +199,12 @@ export class TotalStarTrophy extends Trophy {
     super(score, rankConditions);
     this.title = "Stars";
     this.filterTitles = ["Star", "Stars"];
+    this.bottomMessage = "∞pt";
   }
 }
 
 export class TotalCommitTrophy extends Trophy {
-  constructor(score: "∞pt") {
+  constructor(score: number) {
     const rankConditions = [
       new RankCondition(
         RANK.SSS,
@@ -214,11 +215,12 @@ export class TotalCommitTrophy extends Trophy {
     super(score, rankConditions);
     this.title = "Commit";
     this.filterTitles = ["Commit"];
+    this.bottomMessage = "∞pt";
   }
 }
 
 export class TotalFollowerTrophy extends Trophy {
-  constructor(score: "∞pt") {
+  constructor(score: number) {
     const rankConditions = [
       new RankCondition(
         RANK.SSS,
@@ -229,11 +231,12 @@ export class TotalFollowerTrophy extends Trophy {
     super(score, rankConditions);
     this.title = "Followers";
     this.filterTitles = ["Follower", "Followers"];
+    this.bottomMessage = "∞pt";
   }
 }
 
 export class TotalIssueTrophy extends Trophy {
-  constructor(score: "∞pt") {
+  constructor(score: number) {
     const rankConditions = [
       new RankCondition(
         RANK.SSS,
@@ -244,6 +247,7 @@ export class TotalIssueTrophy extends Trophy {
     super(score, rankConditions);
     this.title = "Issues";
     this.filterTitles = ["Issue", "Issues"];
+    this.bottomMessage = "∞pt";
   }
 }
 
@@ -259,11 +263,12 @@ export class TotalPullRequestTrophy extends Trophy {
     super(score, rankConditions);
     this.title = "PullRequest";
     this.filterTitles = ["PR", "PullRequest"];
+    this.bottomMessage = "∞pt";
   }
 }
 
 export class TotalRepositoryTrophy extends Trophy {
-  constructor(score: "∞pt") {
+  constructor(score: number) {
     const rankConditions = [
       new RankCondition(
         RANK.SSS,
@@ -274,5 +279,6 @@ export class TotalRepositoryTrophy extends Trophy {
     super(score, rankConditions);
     this.title = "Repositories";
     this.filterTitles = ["Repo", "Repository", "Repositories"];
+    this.bottomMessage = "∞pt";
   }
 }
